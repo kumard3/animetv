@@ -1,0 +1,11 @@
+.body{
+
+color: white;
+align-items: center;
+}
+.body-headerWrapper{
+    display: flex;
+}
+.body-center{
+    padding: 10px;
+}

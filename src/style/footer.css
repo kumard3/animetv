@@ -1,0 +1,20 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    height: 89px;
+    width: 100vw;
+    background: #272626;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+}
+.home{
+    cursor: pointer;
+}
+.span-home{
+    display: none;
+}

@@ -1,0 +1,16 @@
+.card {
+    max-width: 100vw;
+}
+
+.card-wrapper {
+    display: flex;
+    overflow-x: scroll;
+  
+
+}
+
+.card-img {
+    width: 238px;
+    height: 326px;
+    padding: 10px;
+}

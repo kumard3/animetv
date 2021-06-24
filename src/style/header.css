@@ -1,0 +1,14 @@
+
+.header{
+    height: 15vh;
+}
+.logo{
+    float: left;
+    color: white;
+    font-family: sans-serif;
+    margin:  20px;
+}
+.profile {
+    float: right;
+    margin: 5px 20px;
+}
