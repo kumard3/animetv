@@ -1,17 +1,11 @@
-import React,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "../style/card.css";
-import test from "../assets/test.png";
+
 import { animated, useSpring } from "react-spring";
 import { useScroll } from "react-use-gesture";
-import axios from 'axios'
-function Card({ anime,fetchUrl }) {
-  // const style = useSpring({
-  //   from: {
-  //   transform: "perspective(500px) rotateY(0deg)"
-  //   },
-  //   transform: "perspective(500px) rotateY(25deg)"
-  //   });
-
+import axios from "axios";
+import { Link } from "react-router-dom";
+function Card({ fetchUrl }) {
   const [style, set] = useSpring(() => ({
     transform: "perspective(500px) rotateY(0deg)",
   }));
@@ -29,7 +23,7 @@ function Card({ anime,fetchUrl }) {
       return value < -clampAt ? -clampAt : value;
     }
   };
-  
+
   const [movies, setMovies] = useState([]);
   const [trailerUrl, setTrailerUrl] = useState("");
 
@@ -45,58 +39,18 @@ function Card({ anime,fetchUrl }) {
     <div className="container" {...bind()}>
       {movies.map((ani) => {
         return (
-          <animated.img
-            className="card"
-            src={`https://image.tmdb.org/t/p/original${ani.poster_path}`}
-            style={{
-              ...style,
-            }}
-          />
+          <Link to={`/anime/${ani.id}`}>
+            {" "}
+            <animated.img
+              className="card"
+              src={`https://image.tmdb.org/t/p/original${ani.poster_path}`}
+              style={{
+                ...style,
+              }}
+            />
+          </Link>
         );
       })}
-
-      {/*     <animated.img
-        className="card"
-        src={test}
-        alt="card-img"
-        style={{
-          ...style,
-        }}
-      />
-
-      <animated.img
-        className="card"
-        src={test}
-        alt="card-img"
-        style={{
-          ...style,
-        }}
-      />
-      <animated.img
-        className="card"
-        src={test}
-        alt="card-img"
-        style={{
-          ...style,
-        }}
-      />
-
-      <animated.img
-        className="card"
-        src={test}
-        alt="card-img"
-        style={{
-          ...style,
-        }}
-      />
-      <animated.img
-        className="card"
-        src={test}
-        alt="card-img"
-        style={{
-          ...style,
-        }}
-      />*/}
     </div>
   );
 }
