@@ -1,16 +1,102 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import "../style/card.css";
 import test from "../assets/test.png";
-function Card() {
+import { animated, useSpring } from "react-spring";
+import { useScroll } from "react-use-gesture";
+import axios from 'axios'
+function Card({ anime,fetchUrl }) {
+  // const style = useSpring({
+  //   from: {
+  //   transform: "perspective(500px) rotateY(0deg)"
+  //   },
+  //   transform: "perspective(500px) rotateY(25deg)"
+  //   });
+
+  const [style, set] = useSpring(() => ({
+    transform: "perspective(500px) rotateY(0deg)",
+  }));
+  const bind = useScroll((event) => {
+    set({
+      transform: `perspective(500px) rotateY(${
+        event.scrolling ? clamp(event.delta[0]) : 0
+      }deg)`,
+    });
+  });
+  const clamp = (value, clampAt) => {
+    if (value > 0) {
+      return value > clampAt ? clampAt : value;
+    } else {
+      return value < -clampAt ? -clampAt : value;
+    }
+  };
+  
+  const [movies, setMovies] = useState([]);
+  const [trailerUrl, setTrailerUrl] = useState("");
+
+  useEffect(() => {
+    async function fetchData() {
+      const request = await axios.get(fetchUrl);
+      setMovies(request.data.results);
+      return request;
+    }
+    fetchData();
+  }, [fetchUrl]);
   return (
-    <div className="card">
-      <div className="card-wrapper" >
-        <img className="card-img" src={test} alt="card-img" />
-        <img className="card-img" src={test} alt="card-img" />
-        <img className="card-img" src={test} alt="card-img" />
-        <img className="card-img" src={test} alt="card-img" />
-        <img className="card-img" src={test} alt="card-img" />
-      </div>
+    <div className="container" {...bind()}>
+      {movies.map((ani) => {
+        return (
+          <animated.img
+            className="card"
+            src={`https://image.tmdb.org/t/p/original${ani.poster_path}`}
+            style={{
+              ...style,
+            }}
+          />
+        );
+      })}
+
+      {/*     <animated.img
+        className="card"
+        src={test}
+        alt="card-img"
+        style={{
+          ...style,
+        }}
+      />
+
+      <animated.img
+        className="card"
+        src={test}
+        alt="card-img"
+        style={{
+          ...style,
+        }}
+      />
+      <animated.img
+        className="card"
+        src={test}
+        alt="card-img"
+        style={{
+          ...style,
+        }}
+      />
+
+      <animated.img
+        className="card"
+        src={test}
+        alt="card-img"
+        style={{
+          ...style,
+        }}
+      />
+      <animated.img
+        className="card"
+        src={test}
+        alt="card-img"
+        style={{
+          ...style,
+        }}
+      />*/}
     </div>
   );
 }

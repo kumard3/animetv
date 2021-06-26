@@ -1,5 +1,6 @@
-.card {
+/* .card {
     max-width: 100vw;
+  
 }
 
 .card-wrapper {
@@ -7,10 +8,31 @@
     overflow-x: scroll;
   
 
-}
+} */
 
-.card-img {
+/* .card-img {
     width: 238px;
     height: 326px;
     padding: 10px;
-}
+} */
+
+
+
+::-webkit-scrollbar {
+    width: 0px;
+    }
+    .container {
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+    }
+    .card {
+    flex-shrink: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-left: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    }

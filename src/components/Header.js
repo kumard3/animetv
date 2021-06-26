@@ -4,7 +4,7 @@ import profile from '../assets/profile.png'
 function Header() {
   return (
     <div className="header">
-      <h3 className="logo" > anime.tv</h3>
+      <h2 className="logo" > anime<span className="logo-img">.tv</span></h2>
       <img className="profile" src={profile} alt="profile" />
     </div>
   );

@@ -5,10 +5,19 @@
 .logo{
     float: left;
     color: white;
-    font-family: sans-serif;
+    
     margin:  20px;
 }
 .profile {
     float: right;
     margin: 5px 20px;
+}
+.logo{
+    color: rgb(255, 174, 0);
+}
+.logo-img{
+    color: rgb(24, 61, 226);
+}
+.body-title{
+   
 }
