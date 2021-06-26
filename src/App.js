@@ -11,7 +11,7 @@ function App() {
     for (let i = 1; i <= 6; i++) {
       async function getData() {
         const request = await axios.get(
-          `https://api.themoviedb.org/3/keyword/210024/movies?api_key=206b725c7666fcf8a08aade57ba94850&page=${i}`
+          `https://api.themoviedb.org/3/keyword/210024/movies?api_key=206b725c7666fcf8a08aade57ba94850&page=8`
         );
         setAnime(...anime, request.data.results);
       }
@@ -20,11 +20,10 @@ function App() {
    
   }, []);
 
-  // console.log(anime);
   return (
     <div className="app">
       <Header />
-      <Body anime={anime} />
+      <Body  />
     </div>
   );
 }

@@ -4,13 +4,8 @@ import test from "../assets/test.png";
 import { animated, useSpring } from "react-spring";
 import { useScroll } from "react-use-gesture";
 import axios from 'axios'
-function Card({ anime,fetchUrl }) {
-  // const style = useSpring({
-  //   from: {
-  //   transform: "perspective(500px) rotateY(0deg)"
-  //   },
-  //   transform: "perspective(500px) rotateY(25deg)"
-  //   });
+function Card({ fetchUrl }) {
+
 
   const [style, set] = useSpring(() => ({
     transform: "perspective(500px) rotateY(0deg)",
@@ -54,49 +49,6 @@ function Card({ anime,fetchUrl }) {
           />
         );
       })}
-
-      {/*     <animated.img
-        className="card"
-        src={test}
-        alt="card-img"
-        style={{
-          ...style,
-        }}
-      />
-
-      <animated.img
-        className="card"
-        src={test}
-        alt="card-img"
-        style={{
-          ...style,
-        }}
-      />
-      <animated.img
-        className="card"
-        src={test}
-        alt="card-img"
-        style={{
-          ...style,
-        }}
-      />
-
-      <animated.img
-        className="card"
-        src={test}
-        alt="card-img"
-        style={{
-          ...style,
-        }}
-      />
-      <animated.img
-        className="card"
-        src={test}
-        alt="card-img"
-        style={{
-          ...style,
-        }}
-      />*/}
     </div>
   );
 }

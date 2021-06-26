@@ -4,7 +4,7 @@ import "../style/cardinfo.css";
 const CardInfo = () => {
   return (
     <div className="card__info">
-    <img className="arrow" src={arrow} />
+    <img className="arrow" src={arrow}  />
       <img
         className="cardinfo__img"
         src="https://cdn.myanimelist.net/images/anime/9/84460.jpg"
