@@ -1,13 +1,16 @@
-.body{
+.body {
     color: white;
     align-items: center;
 }
-.body-headerWrapper{
+
+.body-headerWrapper {
     display: flex;
 }
-.body-center{
+
+.body-center {
     padding: 10px;
 }
+
 .back {
     position: absolute;
     z-index: 1;
@@ -15,15 +18,18 @@
     width: 100%;
     height: 100%;
 }
-.body-title{
+
+.body-title {
     padding: 10px 0px;
 }
+
 .card-seaction {
     position: relative;
     z-index: 2;
-    top: 0px ; 
+    top: 0px;
     padding-left: 10px;
 }
+
 .slide {
     min-width: 100%;
     margin: 0;
@@ -32,135 +38,151 @@
     width: 100vw;
     height: 90vh;
 }
+
 .button__section {
     position: relative;
     display: flex;
     top: -100px;
     z-index: 10;
-    justify-content: space-around; 
+    justify-content: space-around;
     padding: 10px;
     font-family: sans-serif;
 
 }
-.mylist{
+
+.mylist {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center ;
-    font-family:  sans-serif;
+    align-items: center;
+    font-family: sans-serif;
     font-weight: 600;
 }
-.mylistt{
-    width:20px;
-    padding-bottom: 6px ;
-    font-family:  sans-serif;
+
+.mylistt {
+    width: 20px;
+    padding-bottom: 6px;
+    font-family: sans-serif;
     font-weight: 600;
 }
-.myplay{
-    display:flex ;
+
+.myplay {
+    display: flex;
     justify-content: center;
-    align-items:center ;
+    align-items: center;
 
 }
-.playy{
+
+.playy {
     width: 25px;
-    padding-right: 10px ;
+    padding-right: 10px;
     padding-top: 4px;
 }
 
-.myplaybutton{
+.myplaybutton {
     width: 88px;
     height: 38px;
     font-size: 1.3rem;
     border: none;
     border-radius: 10px;
-    font-family:  sans-serif;
+    font-family: sans-serif;
     font-weight: 600;
 }
-.genre__section{
+
+.genre__section {
     position: relative;
     display: flex;
     top: -120px;
     z-index: 10;
     justify-content: center;
-    align-items:center ;
+    align-items: center;
     font-family: Arial;
 }
-.genre__h3{
-    
-    font-family:  Helvetic;
+
+.genre__h3 {
+
+    font-family: Helvetic;
 }
 
-.genre__h3 span{
+.genre__h3 span {
     padding: 0px 5px;
 }
-.Top__week{
+
+.Top__week {
     display: flex;
-    overflow: scroll;
+    overflow-x: scroll;
     justify-content: space-between;
- 
+
 }
-.body__number{
+
+.body__number {
     display: flex;
     justify-content: space-between;
 }
-.img__number{
+
+.img__number {
     width: 100px;
     height: 150px;
     border-radius: 10px;
     position: relative;
     z-index: 5;
 }
-.onee{
+
+.onee {
     position: relative;
     z-index: 10;
     top: 4.5vh;
     left: 10px;
     width: 45px;
-   
+
 }
-.one1{
+
+.one1 {
     left: -17px;
 
 }
 
-.onee2{
+.onee2 {
     position: relative;
     z-index: 1;
     top: 4vh;
     left: -13px;
     width: 60px;
-   
+
 }
-.one3{
+
+.one3 {
     position: relative;
     z-index: 1;
     top: 4vh;
     left: -27px;
     width: 60px;
-   
+
 }
-.onee4{
+
+.onee4 {
     position: relative;
     z-index: 1;
     top: 4vh;
     left: -27px;
     width: 60px;
-   
+
 }
-.one5{
+
+.one5 {
     position: relative;
     z-index: 1;
     top: 4vh;
     left: -27px;
     width: 60px;
-   
+
 }
-.onee6{
+
+.onee6 {
     position: relative;
     z-index: 1;
     top: 4vh;
     left: -27px;
     width: 60px;
-   
+
 }
