@@ -4,6 +4,8 @@ import axios from 'axios'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
 
+import '../style/carousel.css'
+
 const ReactCarousel = ({fetchUrl}) =>   {
   const [movies, setMovies] = useState([]);
   const [trailerUrl, setTrailerUrl] = useState("");
@@ -23,7 +25,7 @@ const ReactCarousel = ({fetchUrl}) =>   {
           <img
             className="carded"
             src={`https://image.tmdb.org/t/p/original${ani.poster_path}`}
-            
+            alt="test"
           />
         );
       })}

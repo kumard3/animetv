@@ -43,7 +43,7 @@ function Card({ fetchUrl }) {
             {" "}
             <animated.img
               className="card"
-              src={`https://image.tmdb.org/t/p/original${ani.poster_path}`}
+              src={`https://image.tmdb.org/t/p/w200${ani.poster_path}`}
               style={{
                 ...style,
               }}

@@ -1,11 +1,40 @@
 .body{
-
-color: white;
-align-items: center;
+    color: white;
+    align-items: center;
 }
 .body-headerWrapper{
     display: flex;
 }
 .body-center{
     padding: 10px;
+}
+.back {
+    position: absolute;
+    z-index: 1;
+    top: -64px;
+    width: 100%;
+    height: 100%;
+}
+.card-seaction {
+    position: relative;
+    z-index: 2;
+    top: -60px ; 
+    padding-left: 10px;
+}
+.slide {
+    min-width: 100%;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    width: 100vw;
+    height: 90vh;
+}
+.button__section {
+    position: relative;
+    display: flex;
+    top: -100px;
+    z-index: 10;
+    justify-content: space-around; 
+    padding: 10px;
+
 }

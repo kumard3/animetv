@@ -1,6 +1,8 @@
-
-.header{
+.header {
+    position: absolute;
     height: 15vh;
+    z-index: 10;
+    width: 100vw;
 }
 .logo{
     float: left;
@@ -20,4 +22,25 @@
 }
 .body-title{
    
+}
+.carousel-root {
+    outline: none;
+    background-image: black;
+    opacity: .7;
+}
+
+.carousel .thumbs-wrapper {
+    margin: 20px;
+    overflow: hidden;
+    display: none;
+}
+.card {
+    flex-shrink: 0;
+    width: 238px;
+    height: 286px;
+    border-radius: 10px;
+    margin-left: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }

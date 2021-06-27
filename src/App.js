@@ -35,6 +35,7 @@ function App() {
     }
     fetchData();
   }, []);
+  console.log(anime1.id);
   let allData = [
     ...anime1,
     ...anime2,
@@ -44,12 +45,11 @@ function App() {
     ...anime6,
     ...anime7,
   ];
-  console.log(allData);
   return (
     <div className="app">
-      <Header />
-      <Router>
-        <Route exact path="/">
+    <Router>
+    <Route exact path="/">
+    <Header />
           <Body />
         </Route>
         <Route path="/anime/:id">

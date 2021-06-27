@@ -28,8 +28,7 @@
     }
     .card {
     flex-shrink: 0;
-    width: 200px;
-    height: 200px;
+    
     border-radius: 10px;
     margin-left: 10px;
     background-size: cover;
