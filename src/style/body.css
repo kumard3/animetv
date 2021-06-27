@@ -114,9 +114,9 @@
 .onee{
     position: relative;
     z-index: 10;
-    top: 4vh;
+    top: 4.5vh;
     left: 10px;
-    width: 40px;
+    width: 45px;
    
 }
 .one1{
@@ -128,7 +128,7 @@
     position: relative;
     z-index: 1;
     top: 4vh;
-    left: -17px;
+    left: -13px;
     width: 60px;
    
 }
