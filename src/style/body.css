@@ -36,5 +36,52 @@
     z-index: 10;
     justify-content: space-around; 
     padding: 10px;
+    font-family: sans-serif;
 
+}
+.mylist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+}
+.mylistt{
+    width:20px;
+    padding-bottom: 6px ;
+}
+.myplay{
+    display:flex ;
+    justify-content: center;
+    align-items:center ;
+
+}
+.playy{
+    width: 25px;
+    padding-right: 10px ;
+    padding-top: 4px;
+}
+
+.myplaybutton{
+    width: 88px;
+    height: 38px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 10px;
+}
+.genre__section{
+    position: relative;
+    display: flex;
+    top: -120px;
+    z-index: 10;
+    justify-content: center;
+    align-items:center ;
+    font-family: Arial;
+}
+.genre__h3{
+    
+    font-family:  Helvetic;
+}
+
+.genre__h3 span{
+    padding: 0px 5px;
 }

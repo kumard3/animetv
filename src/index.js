@@ -6,7 +6,7 @@ import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 
 
 ReactDOM.render(
-  <React.StrictMode>
+  <React.StrictMode>    
     <App />
   </React.StrictMode>,
   document.getElementById('root')

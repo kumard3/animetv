@@ -14,12 +14,14 @@ const CardInfo = ({ allData }) => {
   if (anime) {
     return (
       <div className="card__info">
-        <Link to="/">
-          <img className="arrow" src={arrow} />
-        </Link>
+      <div className="duration" >
+      <Link to="/">
+      <img className="arrow" src={arrow} />
+      </Link>
+      </div>
         <img
           className="cardinfo__img"
-          src={`https://image.tmdb.org/t/p/original${anime.poster_path}`}
+          src={`https://image.tmdb.org/t/p/w500${anime.poster_path}`}
           alt="card-img"
         />
         <div className="cardinfo__wrapper">
