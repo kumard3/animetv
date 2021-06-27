@@ -21,7 +21,7 @@
 .card-seaction {
     position: relative;
     z-index: 2;
-    top: -81px ; 
+    top: 0px ; 
     padding-left: 10px;
 }
 .slide {
@@ -93,4 +93,74 @@
 
 .genre__h3 span{
     padding: 0px 5px;
+}
+.Top__week{
+    display: flex;
+    overflow: scroll;
+    justify-content: space-between;
+ 
+}
+.body__number{
+    display: flex;
+    justify-content: space-between;
+}
+.img__number{
+    width: 100px;
+    height: 150px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 5;
+}
+.onee{
+    position: relative;
+    z-index: 10;
+    top: 4vh;
+    left: 10px;
+    width: 40px;
+   
+}
+.one1{
+    left: -17px;
+
+}
+
+.onee2{
+    position: relative;
+    z-index: 1;
+    top: 4vh;
+    left: -17px;
+    width: 60px;
+   
+}
+.one3{
+    position: relative;
+    z-index: 1;
+    top: 4vh;
+    left: -27px;
+    width: 60px;
+   
+}
+.onee4{
+    position: relative;
+    z-index: 1;
+    top: 4vh;
+    left: -27px;
+    width: 60px;
+   
+}
+.one5{
+    position: relative;
+    z-index: 1;
+    top: 4vh;
+    left: -27px;
+    width: 60px;
+   
+}
+.onee6{
+    position: relative;
+    z-index: 1;
+    top: 4vh;
+    left: -27px;
+    width: 60px;
+   
 }
