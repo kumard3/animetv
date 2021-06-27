@@ -20,15 +20,13 @@ const ReactCarousel = ({fetchUrl}) =>   {
   }, [fetchUrl]);
   return (
     <Carousel className="containe">
-      {movies.map((ani) => {
-        return (
-          <img
-            className="carded"
-            src={`https://image.tmdb.org/t/p/original${ani.poster_path}`}
-            alt="test"
-          />
-        );
-      })}
+    <img
+    className="carded"
+    // src={`https://image.tmdb.org/t/p/original${ani.poster_path}`}
+    src="https://m.media-amazon.com/images/M/MV5BZjZjNzI5MDctY2Y4YS00NmM4LTljMmItZTFkOTExNGI3ODRhXkEyXkFqcGdeQXVyNjc3MjQzNTI@._V1_.jpg"
+    alt="test"
+  />
+  
     </Carousel>
   );
 }

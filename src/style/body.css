@@ -15,6 +15,9 @@
     width: 100%;
     height: 100%;
 }
+.body-title{
+    padding: 10px 0px;
+}
 .card-seaction {
     position: relative;
     z-index: 2;
@@ -44,10 +47,14 @@
     flex-direction: column;
     justify-content: center;
     align-items:center ;
+    font-family:  sans-serif;
+    font-weight: 600;
 }
 .mylistt{
     width:20px;
     padding-bottom: 6px ;
+    font-family:  sans-serif;
+    font-weight: 600;
 }
 .myplay{
     display:flex ;
@@ -67,6 +74,8 @@
     font-size: 1.3rem;
     border: none;
     border-radius: 10px;
+    font-family:  sans-serif;
+    font-weight: 600;
 }
 .genre__section{
     position: relative;

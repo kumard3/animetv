@@ -15,7 +15,7 @@ function Body() {
       <img className="back" src={Rectangle} />
       <div className="genre__section" >
         <span className="genre__h3" >
-          Adventure <span>.</span>Fiction<span>.</span> Dark fantasy<span>.</span> Martial
+          Adventure <span>•</span>Fiction<span>•</span> Dark fantasy<span>•</span> Martial
           Arts
         </span>
       </div>
@@ -24,7 +24,7 @@ function Body() {
         <div className="mylist">
           {" "}
           <img className="mylistt" src={list} />
-          <span> My List </span>
+           My List 
         </div>
         <div className="myplay">
           {" "}
@@ -36,16 +36,26 @@ function Body() {
         <div className="mylist">
           {" "}
           <img className="mylistt" src={info} />
-          <span> Info </span>
+          Info 
         </div>
       </div>
       <div className="card-seaction">
         <h2 className="body-title">Trending Movies </h2>
         <Card fetchUrl={requests.fetchPage2} />
+        <h2 className="body-title">Trending Movies </h2>
+        
         <Card fetchUrl={requests.fetchPage3} />
+        <h2 className="body-title">Trending Movies </h2>
+        
         <Card fetchUrl={requests.fetchPage4} />
+        <h2 className="body-title">Trending Movies </h2>
+        
         <Card fetchUrl={requests.fetchPage5} />
+        <h2 className="body-title">Trending Movies </h2>
+        
         <Card fetchUrl={requests.fetchPage6} />
+        <h2 className="body-title">Trending Movies </h2>
+        
         <Card fetchUrl={requests.fetchPage7} />
       </div>
     </div>
