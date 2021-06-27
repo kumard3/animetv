@@ -39,6 +39,18 @@ function Body() {
           Info 
         </div>
       </div>
+    <div className="Top__week">
+    <h2 className="body-title">Naruto </h2>
+    <h2 className="body-title"> Attack on Titan </h2>
+    <h2 className="body-title"> Death Note </h2>
+    <h2 className="body-title">Dragon Ball Z </h2>
+    <h2 className="body-title">Jujutsu Kaisen</h2>
+    <h2 className="body-title">Bleach </h2>
+    <h2 className="body-title">One-Punch Man </h2>
+    <h2 className="body-title">Demon Slayer: Kimetsu No Yaiba </h2>
+    <h2 className="body-title">Clannad </h2>
+    </div>
+
       <div className="card-seaction">
         <h2 className="body-title">Trending Movies </h2>
         <Card fetchUrl={requests.fetchPage2} />
