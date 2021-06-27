@@ -1,0 +1,38 @@
+.season{
+    background-color: gray;
+    color: white;
+    border: none;
+}
+.fixed{
+    position: fixed;
+    z-index: 20;
+}
+
+.main__video{
+    height: 100vh;
+}
+.line{
+    width: 100vw;
+    height: 1px;
+    background-color: white;
+    margin: 10px 0px ;
+}
+.wrapper{
+    position: relative;
+    top: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   overflow: scroll;
+}
+
+.video__button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.videobutton{
+    background-color: rgb(34, 34, 34);
+    border: none;
+    margin: 5px ;
+}

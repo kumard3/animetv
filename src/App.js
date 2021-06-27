@@ -8,6 +8,7 @@ import axios from "axios";
 import Body from "./components/Body";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Video from "./components/Video";
 
 function App() {
   const [anime1, setAnime1] = useState([]);
@@ -56,6 +57,9 @@ function App() {
         </Route>
         <Route path="/anime/:id">
           <CardInfo allData={allData} />
+        </Route>
+        <Route path="/video">
+          <Video />
         </Route>
       </Router>
     </div>
