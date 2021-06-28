@@ -72,10 +72,12 @@ function Naruto() {
               </div>
               <div className="mypla">
               {" "}
-              <button className="myplaybutton btnn">
-                <img className="playyy" src={play} />
-                Play{" "}
-              </button>
+             <Link to="/narutovideo">
+             <button className="myplaybutton btnn">
+             <img className="playyy" src={play} />
+             Play{" "}
+             </button>
+             </Link>
               <div className="bt">
               <img className="downl" src={download}/>
               Download

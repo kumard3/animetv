@@ -16,6 +16,8 @@ import Kaisen from "./components/data/Kaisen";
 import OnePunch from "./components/OnePunch";
 import Punch from "./components/data/Punch";
 
+import Narutovideo from "./components/data/narutovideo";
+
 function App() {
   const [anime1, setAnime1] = useState([]);
   const [anime2, setAnime2] = useState([]);
@@ -78,6 +80,9 @@ function App() {
         </Route>
         <Route path="/onepunch">
           <Punch />
+        </Route>
+        <Route path="/narutovideo">
+          <Narutovideo />
         </Route>
       </Router>
     </div>

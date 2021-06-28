@@ -35,10 +35,12 @@ const Note = () => {
       </div>
 
       <div className="bottom___section" >
-        <button className="bottom___button"  >  
-        <img className="playwhite"  src={playwhite} alt="" />
+      <Link to="/narutovideo">
+      <button className="bottom___button">
+        <img className="playwhite" src={playwhite} alt="" />
         <h3>Watch Now </h3>
-        </button>
+      </button>
+    </Link>
         <button className="bottom___button2"  >  
         <img className="save"  src={save} alt="" />
         <h3>Save </h3>
