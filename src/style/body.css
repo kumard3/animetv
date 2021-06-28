@@ -119,6 +119,7 @@
 .body__number {
     display: flex;
     justify-content: space-between;
+    width: 44vw;
 }
 
 .img__number {
@@ -180,4 +181,9 @@
     top: 4vh;
     left: 17px;
     width: 60px;
+}
+
+.video__drawer{
+    position: relative;
+    left: -100px;
 }

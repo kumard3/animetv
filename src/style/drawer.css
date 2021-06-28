@@ -1,0 +1,73 @@
+.draw {
+    background-color: rgba(0, 0, 0, 0.185);
+}
+
+.data__name{
+    color: rgb(197, 197, 197);
+}
+.MuiDrawer-paperAnchorBottom {
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    max-height: 100%;
+    background-color: black;
+}
+.drawer__content{
+    color:white ;
+      background-color: black;
+      display: flex;
+      padding: 20px;
+}
+.drawer__wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.mypla{
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+    background-color: black;
+}
+.btnn{
+    width: 100px;
+    margin-bottom: 10px;
+}
+.play__drawer{
+    background-color: black;
+    color: white;
+}
+.line{
+    height: .1px;
+
+}
+.line2 {
+    width: 100vw;
+    height: .7px;
+    background-color: white;
+
+}
+.drawer__bottom{
+    margin: 20px 10px ;
+    display: flex;
+}
+.drawer__bottom h3 {
+    font-family: poppins;
+
+}
+.bt{
+    background-color: black;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-bottom: 13px;
+}
+.downl{
+    width: 23px;
+}
+.ptag{
+    font-size: 1rem;
+}

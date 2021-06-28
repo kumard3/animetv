@@ -37,7 +37,7 @@ function App() {
     }
     fetchData();
   }, []);
-  console.log(anime1.id);
+  console.log(anime1);
   let allData = [
     ...anime1,
     ...anime2,
