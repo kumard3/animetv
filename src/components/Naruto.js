@@ -10,6 +10,8 @@ import data from "./data";
 import "../style/drawer.css";
 import info from "../assets/info.svg";
 import play from "../assets/play.svg";
+import { Link } from "react-router-dom";
+
 import download from "../assets/download.svg";
 const useStyles = makeStyles({
   list: {
@@ -83,7 +85,9 @@ function Naruto() {
               <div className="line2 " />
               <div className="drawer__bottom" >  
               <img className="mylistt" src={info} />
+              <Link to="/naruto">
               <h3>Details & More  </h3>
+              </Link>
               </div>
             </div>
           </Drawer>

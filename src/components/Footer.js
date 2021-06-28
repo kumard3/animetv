@@ -2,7 +2,7 @@ import React from "react";
 import "../style/footer.css";
 import home from "../assets/home.png";
 import playwhite from "../assets/playwhite.svg";
-import profile from "../assets/profile.png";
+import list from "../assets/list.svg";
 function Footer() {
   return (
     <div className="footer">
@@ -16,8 +16,8 @@ function Footer() {
         <span className="span-home">videos</span>
       </div>
       <div className="home">
-        <img className="profile-image" src={profile} alt="home" />
-        <span className="span-home">profile</span>
+        <img className="profile-image" src={list} alt="home" />
+        <span className="span-home">My List</span>
       </div>
 
     </div>

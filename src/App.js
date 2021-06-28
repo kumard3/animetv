@@ -9,6 +9,12 @@ import Body from "./components/Body";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Video from "./components/Video";
+import NarutoDes from "./components/NarutoDes";
+import Titan from "./components/data/Titan";
+import Note from "./components/data/Note";
+import Kaisen from "./components/data/Kaisen";
+import OnePunch from "./components/OnePunch";
+import Punch from "./components/data/Punch";
 
 function App() {
   const [anime1, setAnime1] = useState([]);
@@ -58,8 +64,20 @@ function App() {
         <Route path="/anime/:id">
           <CardInfo allData={allData} />
         </Route>
-        <Route path="/video">
-          <Video />
+        <Route path="/naruto">
+          <NarutoDes />
+        </Route>
+        <Route path="/titans">
+          <Titan />
+        </Route>
+        <Route path="/deathnote">
+          <Note />
+        </Route>
+        <Route path="/kaisen">
+          <Kaisen />
+        </Route>
+        <Route path="/onepunch">
+          <Punch />
         </Route>
       </Router>
     </div>

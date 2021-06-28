@@ -7,6 +7,7 @@ import play from "../assets/play.svg";
 import download from "../assets/download.svg";
 import "../style/cardinfo.css";
 import data from './data'
+import { Link } from "react-router-dom";
 const useStyles = makeStyles({
   list: {
     width: 250,
@@ -68,7 +69,10 @@ function Attack_titan() {
           <div className="line2 " />
           <div className="drawer__bottom" >  
           <img className="mylistt" src={info} />
+          <Link to="/titans">
+          
           <h3>Details & More  </h3>
+          </Link>
           </div>
         </div>
           </Drawer>
