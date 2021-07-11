@@ -16,11 +16,10 @@ const CardInfo = ({ allData }) => {
   if (anime) {
     return (
       <div className="card__info">
-     
-          <Link to="/">
-            <img className="arrow" src={arrow} />
-          </Link>
-    
+        <Link to="/">
+          <img className="arrow" src={arrow} />
+        </Link>
+
         <img
           className="cardinfo__img"
           src={`https://image.tmdb.org/t/p/w500${anime.poster_path}`}
@@ -37,18 +36,16 @@ const CardInfo = ({ allData }) => {
           <p>{anime.overview}</p>
         </div>
 
-        <div className="bottom___section" >
-          <button className="bottom___button"  >  
-          <img className="playwhite"  src={playwhite} alt="" />
-          <h3>Watch Now </h3>
+        <div className="bottom___section">
+          <button className="bottom___button">
+            <img className="playwhite" src={playwhite} alt="" />
+            <h3>Watch Now </h3>
           </button>
-          <button className="bottom___button2"  >  
-          <img className="save"  src={save} alt="" />
-          <h3>Save </h3>
+          <button className="bottom___button2">
+            <img className="save" src={save} alt="" />
+            <h3>Save </h3>
           </button>
-
         </div>
-
       </div>
     );
   } else {

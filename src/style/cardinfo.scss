@@ -4,11 +4,12 @@
   flex-direction: column;
 }
 .arrow {
-  position: fixed;
+  position: absolute;
   z-index: 10;
+  top: 10px;
+  margin-left: 10px;
+
   width: 15px;
-  left: 10px;
-  top: 20px;
 }
 .cardinfo__img {
   opacity: 0.8;
