@@ -1,8 +1,8 @@
 import React from "react";
-import data from "./data";
+import data from "../api/data";
 import { useParams } from "react-router-dom";
 import arrow from "../assets/arrow.png";
-import "../style/cardinfo.css";
+import "../style/cardinfo.scss";
 import Rectangle from "../assets/Rectangle.png";
 import playwhite from "../assets/playwhite.svg";
 import save from "../assets/save.svg";

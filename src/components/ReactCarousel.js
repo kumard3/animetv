@@ -4,7 +4,7 @@ import axios from 'axios'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
 
-import '../style/carousel.css'
+import '../style/carousel.scss'
 
 const ReactCarousel = ({fetchUrl}) =>   {
   const [movies, setMovies] = useState([]);

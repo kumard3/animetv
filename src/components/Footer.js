@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/footer.css";
+import "../style/footer.scss";
 import home from "../assets/home.png";
 import playwhite from "../assets/playwhite.svg";
 import list from "../assets/list.svg";

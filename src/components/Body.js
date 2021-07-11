@@ -1,7 +1,7 @@
 import React from "react";
-import "../style/body.css";
+import "../style/body.scss";
 import Card from "./Card";
-import requests from "./card-data";
+import requests from "../api/card-data";
 import ReactCarousel from "./ReactCarousel";
 import Rectangle from "../assets/Rectangle.png";
 import info from "../assets/info.svg";
@@ -12,7 +12,7 @@ import two from "../assets/2.svg";
 import three from "../assets/3.svg";
 import four from "../assets/4.svg";
 import five from "../assets/5.svg";
-import data from "./data";
+import data from "../api/data";
 import Naruto from "./Naruto";
 import Attack_titan from "./Attack_titan";
 import DeathNote from "./DeathNote";
@@ -24,7 +24,7 @@ function Body() {
   return (
     <div className="body">
       <ReactCarousel autoPlay="true" fetchUrl={requests.fetchPage1} />
-      <img className="back" src={Rectangle} />
+      <img className="back " src={Rectangle} />
       <div className="genre__section">
         <span className="genre__h3">
           Adventure <span>•</span>Fiction<span>•</span> Dark fantasy

@@ -18,3 +18,9 @@ a{
   background-color: #000000;
 
 }
+*{
+  max-width: 760px;
+}
+.app{
+
+}

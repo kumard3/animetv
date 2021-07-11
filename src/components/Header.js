@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../style/header.css";
+import "../style/header.scss";
 import profile from "../assets/profile.png";
 function Header() {
   const [show, handleShow] = useState(false);

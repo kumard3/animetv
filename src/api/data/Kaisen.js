@@ -1,15 +1,16 @@
 import React from 'react'
-import data from '../data'
+
 import { useParams } from "react-router-dom";
 import arrow from "../../assets/arrow.png";
-import "../../style/cardinfo.css";
+import "../../style/cardinfo.scss";
 import Rectangle from "../../assets/Rectangle.png";
 
 import playwhite from "../../assets/playwhite.svg";
 import save from "../../assets/save.svg";
 import { Link } from "react-router-dom";
+import data from '../data';
 
-const Note = () => {
+const Kaisen = () => {
     return (
         <div>
         <div className="card__info">
@@ -20,18 +21,18 @@ const Note = () => {
   
       <img
         className="cardinfo__img"
-        src={data[2].img}
+        src={data[3].img}
         alt="card-img"
       />
       <img className="back" src={Rectangle} />
       <div className="cardinfo__wrapper">
-        <h2>{data[2].name} </h2>
+        <h2>{data[3].name} </h2>
         <div className="genes">
           <span> Adventure </span>
           <span> Drama </span>
           <span> Adventure </span>
         </div>
-        <p>{data[2].des}</p>
+        <p>{data[3].des}</p>
       </div>
 
       <div className="bottom___section" >
@@ -53,4 +54,4 @@ const Note = () => {
     )
 }
 
-export default Note
+export default Kaisen

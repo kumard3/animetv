@@ -5,11 +5,11 @@ import Drawer from "@material-ui/core/Drawer";
 import Button from "@material-ui/core/Button";
 import List from "@material-ui/core/List";
 import Divider from "@material-ui/core/Divider";
-import "../style/cardinfo.css";
+import "../style/cardinfo.scss";
 import info from "../assets/info.svg";
 import play from "../assets/play.svg";
 import download from "../assets/download.svg";
-import data from "./data";
+import data from "../api/data";
 import { Link } from "react-router-dom";
 const useStyles = makeStyles({
   list: {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../style/card.css";
+import "../style/card.scss";
 
 import { animated, useSpring } from "react-spring";
 import { useScroll } from "react-use-gesture";

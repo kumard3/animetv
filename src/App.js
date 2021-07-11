@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import requests from "./components/card-data";
+import requests from "./api/card-data";
 import "./App.css";
 import CardInfo from "./components/CardInfo";
 import axios from "axios";
@@ -10,13 +10,13 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Video from "./components/Video";
 import NarutoDes from "./components/NarutoDes";
-import Titan from "./components/data/Titan";
-import Note from "./components/data/Note";
-import Kaisen from "./components/data/Kaisen";
 import OnePunch from "./components/OnePunch";
-import Punch from "./components/data/Punch";
+import Punch from "./api/data/Punch";
 
-import Narutovideo from "./components/data/narutovideo";
+import Narutovideo from "./api/data/narutovideo";
+import Kaisen from './api/data/Kaisen';
+import Note from './api/data/Note';
+import Titan from './api/data/Titan';
 
 function App() {
   const [anime1, setAnime1] = useState([]);

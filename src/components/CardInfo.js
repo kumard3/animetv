@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import arrow from "../assets/arrow.png";
-import "../style/cardinfo.css";
+import "../style/cardinfo.scss";
 import Rectangle from "../assets/Rectangle.png";
 import playwhite from "../assets/playwhite.svg";
 import save from "../assets/save.svg";
@@ -26,7 +26,7 @@ const CardInfo = ({ allData }) => {
           src={`https://image.tmdb.org/t/p/w500${anime.poster_path}`}
           alt="card-img"
         />
-        <img className="back" src={Rectangle} />
+        <img className="back back1" src={Rectangle} />
         <div className="cardinfo__wrapper">
           <h2>{anime.title} </h2>
           <div className="genes">

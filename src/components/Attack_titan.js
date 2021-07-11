@@ -5,8 +5,8 @@ import Drawer from "@material-ui/core/Drawer";
 import info from "../assets/info.svg";
 import play from "../assets/play.svg";
 import download from "../assets/download.svg";
-import "../style/cardinfo.css";
-import data from './data'
+import "../style/cardinfo.scss";
+import data from '../api/data'
 import { Link } from "react-router-dom";
 const useStyles = makeStyles({
   list: {
